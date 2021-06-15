@@ -1,0 +1,31 @@
+.header {
+    height: 80px;
+    font-size: 18px;
+}
+
+.link {
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.signUp {
+    color: white!important;
+    width: 100px;
+    font-weight: 500;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.signUp:hover {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5)!important;
+    background-color: hsla(180, 66%, 49%, 0.5);
+}

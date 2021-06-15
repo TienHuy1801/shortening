@@ -1,0 +1,26 @@
+.view {
+  background-color: hsl(0, 0%, 75%);
+  width: 100%;
+  padding-top: 5px;
+}
+
+.box {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  width: 100%; 
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+
+
+.button {
+  border-radius: 20px;
+}
