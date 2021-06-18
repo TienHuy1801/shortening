@@ -16,12 +16,12 @@
     margin-left: 85px;
 }
 
-.textB {
+.text-title {
     font-size: 75px;
     font-weight:900;
 }
 
-.textS {
+.text-description {
     font-size: 22px;
     font-weight: 500;
 }
@@ -40,4 +40,20 @@
 .button:hover {
     color: rgba(255, 255, 255, 0.5)!important;
     background-color: hsla(180, 66%, 49%, 0.5);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 100%;
+  }
+  .box-content {
+    width: 100%;
+  }
+  .text-title {
+    font-size: 30px;
+  }
+  .text-description {
+
+  }
 }

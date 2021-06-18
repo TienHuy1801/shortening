@@ -12,8 +12,8 @@ export const Content = () => {
     <div className={style.content}>
       <div className={style.box}>
         <div className={style["box-content"]}>
-          <p className={style.textB}>More than just shorted links</p>
-          <p className={style.textS}>Build your brand's recognition and get detailed insights on how your links are performing</p>
+          <p className={style["text-title"]}>More than just shorted links</p>
+          <p className={style["text-description"]}>Build your brand's recognition and get detailed insights on how your links are performing</p>
           <Button className={style.button} onClick={scrollToStart}>Get Started</Button>
         </div>
       </div>

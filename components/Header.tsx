@@ -16,13 +16,13 @@ export const Header = () => {
       <Collapse isOpen={isOpen} navbar style={{justifyContent: "space-between"}}>
         <Nav navbar>
           <NavItem>
-            <NavLink className={style.link} href="/">Features</NavLink>
+            <NavLink className={style.link} href="#features">Features</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={style.link} href="/">Pricing</NavLink>
+            <NavLink className={style.link} href="#resources">Pricing</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={style.link} href="/">Resources</NavLink>
+            <NavLink className={style.link} href="#company">Resources</NavLink>
           </NavItem>
         </Nav>
         <Nav navbar>

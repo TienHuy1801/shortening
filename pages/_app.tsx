@@ -1,12 +1,13 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head'
 import { Header } from '../components/Header';
+import { Boost } from '../components/Boost';
 import { Footer } from '../components/Footer';
+import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
 import store from '../store';
-import React from 'react';
 import { Provider } from 'react-redux';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Header/>
       <Component {...pageProps} /> 
+      <Boost/>
       <Footer/>
     </Provider>
   ); 
