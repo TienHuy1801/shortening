@@ -38,3 +38,8 @@
     background-color: hsla(180, 66%, 49%, 0.5);
 }
 
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 30px;
+  }
+}

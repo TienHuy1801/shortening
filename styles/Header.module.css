@@ -3,6 +3,13 @@
     font-size: 18px;
 }
 
+.collapse {  
+  padding-top: 30px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
 .link {
     cursor: pointer;
     margin-right: 15px;
@@ -28,4 +35,40 @@
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5)!important;
     background-color: hsla(180, 66%, 49%, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .collapse {
+    transition:linear;
+    background-color: hsl(257, 27%, 26%);
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .nav {
+    text-align: center;
+    width: 100%;
+  }
+  .divider {
+    margin: 5px 0;
+    width: 70%;
+    height: 1px;
+    background-color: white;
+    z-index: 3;
+  }
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .signUp{
+    width: 70%;
+    margin: 0;
+  }
+  .link {
+    color: white!important;
+  }
 }

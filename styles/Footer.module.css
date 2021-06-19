@@ -22,10 +22,37 @@
 }
 
 .img {
+  width: 25px;
+  height: 25px;
+
   margin-right: 20px;
   
   cursor: pointer;
 }
 .img:hover {
   color: hsl(180, 66%, 49%);
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    text-align: center;
+  }
+  .title {
+    margin-top: 25px;
+  }
+  .box-img {
+    margin-top: 20px!important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .img {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .img {
+    margin-right: 10px;
+  }
 }

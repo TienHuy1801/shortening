@@ -15,13 +15,13 @@ export const View = () => {
               return (
                 <div className={style.box}>
                   <Row key={index} className={style.row}>
-                      <Col sm="7" style={{marginLeft:"10px"}}>{item.long}</Col>
-                      <Col sm="3" style={{float:"right"}}><a href={item.short}>{item.short}</a></Col>
-                      <Col sm="1"></Col>
-                      <Col sm="1" style={{marginLeft:"-10px"}}>
+                      <Col md="7" sm="12">{item.long}</Col>
+                      <Col md="3" sm="12" className={style.short}><a href={item.short}>{item.short}</a></Col>
+                      <Col md={{ size:1, offset:1 }} sm="12">
                           <Button className={style.button} color="primary" onClick={() => {copy(`${item.short}`)}}>Copy</Button>
                       </Col>
                   </Row>
+                  <div className={style.divider}></div>
                 </div>
               )
             })
@@ -31,8 +31,10 @@ export const View = () => {
     );
   } else {
     return(
-      <div style={{textAlign:"center"}}>
-        <Spinner color="primary" children=""/>
+      <div className={style.view}>
+        <Container style={{textAlign:"center"}}>
+          <Spinner color="primary" children=""/>
+        </Container>
       </div>
     );
   }

@@ -4,9 +4,16 @@
   background-color: hsl(0, 0%, 75%);
 }
 
+.box-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .content {
   text-align: center;
   padding-bottom: 40px;
+  width: 33%;
 }
 
 .h1 {
@@ -84,4 +91,58 @@
 .text {
   font-weight: 500;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .body {
+    padding-top: 80px;
+  }
+  .row {
+    width: 100%;
+    display: block;
+  }
+  .card {
+    width: 100%;
+    text-align: center;
+  }
+  .boxImg {
+    left: 41%;
+  }
+
+  .card:nth-of-type(3) {
+    margin-top: 60px;
+  }
+  
+  .card:nth-of-type(4) {
+    margin-top: 60px;
+  }
+  .divider {
+    position: absolute;
+    width: 10px;
+    height: 60%;
+    background-color: hsl(180, 66%, 49%);
+    left: 50%;
+  }
+  .content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .content {
+    width: 48%;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    height: 370px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .card {
+    height: 260px;
+  }
 }

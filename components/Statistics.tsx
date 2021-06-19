@@ -5,13 +5,14 @@ import style from '../styles/Statistics.module.css'
 export const Statistics = () => {
   return(
     <div className={style.body}>
-      <div className={style.content}>
-        <h1 className={style.h1}>Advanced Statistics</h1>
-        <p className={style.p}>Track how your links are performing across the web </p>
-        <p className={style.p}>with our advanced statistics dashboard</p>
+      <div className={style["box-content"]}>
+        <div className={style.content}>
+          <h1 className={style.h1}>Advanced Statistics</h1>
+          <p className={style.p}>Track how your links are performing across the web with our advanced statistics dashboard</p>
+        </div>
       </div>
       <Container>
-        <Col sm={12} className={style.row}>
+        <Col md={12} className={style.row}>
           <div className={style.divider}></div>
           <Card className={style.card}>
             <div className={style.boxImg}><CardImg className={style.img} src="/images/icon-brand-recognition.svg" alt="brand-recognition"/></div>

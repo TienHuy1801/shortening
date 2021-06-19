@@ -6,11 +6,11 @@ export const Footer = () => {
   return (
     <div className={style.body}>
       <Container >
-        <Row>
-          <Col sm={4}>
+        <Row className={style.row}>
+          <Col md={4} sm={12}>
             <span style={{color:"white", fontSize:"40px", fontWeight:"bold"}}>Shortly</span> 
           </Col>
-          <Col sm={2}>
+          <Col md={2} sm={12}>
             <Nav vertical>
               <NavItem className={style.title} id="features">Features</NavItem>
               <div className={style.divider}></div>
@@ -19,7 +19,7 @@ export const Footer = () => {
               <NavItem className={style.item}>Analytics</NavItem>
             </Nav>
           </Col>
-          <Col sm={2}>
+          <Col md={2} sm={12}>
             <Nav vertical>
               <NavItem className={style.title} id="resources">Resources</NavItem>
               <NavItem className={style.item}>Blog</NavItem>  
@@ -27,7 +27,7 @@ export const Footer = () => {
               <NavItem className={style.item}>Support</NavItem>
             </Nav>
           </Col>
-          <Col sm={2}>
+          <Col md={2} sm={12}>
             <Nav vertical>
               <NavItem className={style.title} id="company">Company</NavItem>
               <div className={style.divider}></div>
@@ -38,7 +38,7 @@ export const Footer = () => {
             </Nav>
           </Col>
 
-          <Col sm={2}>
+          <Col md={2} sm={12} className={style["box-img"]}>
             <img className={style.img} src="images/icon-facebook.svg" alt="facebook" />
             <img className={style.img} src="images/icon-twitter.svg" alt="twitter" />
             <img className={style.img} src="images/icon-pinterest.svg" alt="pinterest" />

@@ -25,7 +25,7 @@ export const Started = () => {
         <Container id="startId">
           <Form className={style.form} onSubmit={submit}>
             <FormGroup check row className={style["form-box"]}>
-              <Col sm={8}>
+              <Col md={8} sm="12">
                 <Input 
                   onChange={handleInput}
                   type="text"
@@ -33,7 +33,7 @@ export const Started = () => {
                   placeholder="Shorten a link here..."
                 ></Input>
               </Col>
-              <Col sm={2}>
+              <Col md={2} sm="12">
                 <Input type="submit" name="submit" className={style.button} value="Submit"></Input>
               </Col>
             </FormGroup>
