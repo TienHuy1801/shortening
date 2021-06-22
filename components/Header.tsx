@@ -13,7 +13,7 @@ export const Header = () => {
         <img src="/images/logo.svg" alt="logo" />
       </NavbarBrand>
       <NavbarToggler onClick={toggle} className="mr-2" />
-      <Collapse isOpen={isOpen} navbar className={style.collapse}>
+      <Collapse isOpen={isOpen} navbar className={style.in}>
         <Nav navbar className={style.nav}>
           <NavItem>
             <NavLink className={style.link} href="#features">Features</NavLink>
@@ -24,9 +24,7 @@ export const Header = () => {
           <NavItem>
             <NavLink className={style.link} href="#company">Resources</NavLink>
           </NavItem>
-        </Nav>
-        <div className={style.divider}></div>
-        <Nav navbar className={style.nav}>
+          <NavItem className={style.divider}></NavItem>
           <NavItem>
             <NavLink className={style.link} href="/">Login</NavLink>
           </NavItem>

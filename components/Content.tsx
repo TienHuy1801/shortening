@@ -4,7 +4,7 @@ import style from '../styles/Content.module.css';
 
 const scrollToStart = () => {
   document.getElementById("startId").scrollIntoView({
-      behavior: 'smooth'
+    behavior: 'smooth'
   });
 }
 

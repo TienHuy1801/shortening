@@ -34,7 +34,7 @@ export const Started = () => {
                 ></Input>
               </Col>
               <Col md={2} sm="12">
-                <Input type="submit" name="submit" className={style.button} value="Submit"></Input>
+                <Input type="submit" name="submit" className={style.button} value="Shorten In!"></Input>
               </Col>
             </FormGroup>
           </Form>

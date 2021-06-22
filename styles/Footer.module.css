@@ -29,8 +29,9 @@
   
   cursor: pointer;
 }
+
 .img:hover {
-  color: hsl(180, 66%, 49%);
+  filter: hsl(180, 66%, 49%);
 }
 
 @media only screen and (max-width: 768px) {

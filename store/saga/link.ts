@@ -4,8 +4,8 @@ import { SUBMIT_LINK } from '../type/link';
 
 async function getLink(longLink: string) {
   let data = {
-  "domain": "bit.ly",  
-  "long_url": longLink 
+    "domain": "bit.ly",  
+    "long_url": longLink 
   };
   const response = await fetch("https://api-ssl.bitly.com/v4/shorten", {
     method: "POST", 
